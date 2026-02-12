@@ -183,7 +183,7 @@ body {
   color: #cccccc;
 }
 
-.favorite-button {
+.favorite-button, .movie-list-button {
   width: 100%;
   padding: 0.75rem;
   background-color: #333;
@@ -292,4 +292,41 @@ body {
 .error-container p {
   font-size: 1.1rem;
   color: #666;
+}
+
+movie-list-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ff6b6b;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s;
+  margin-bottom: 0.5rem;
+}
+
+.favorite-button {
+  background-color: #fff;
+  color: #ff6b6b;
+}
+
+.favorite-button:hover {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.favorite-button.favorited {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.movie-list-button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.movie-list-button.added {
+  background-color: #4CAF50;
+  color: white;
 }
